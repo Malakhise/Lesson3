@@ -10,7 +10,7 @@ Console.WriteLine(string.Join(", ", array));
 int count = 0;
 for(int i = 0; i < array.Length; i++)
     {
-       if (array[i] > 19)
+       if (array[i] > 19 && array[i] < 90)
        count++;
     } 
  Console.WriteLine(count);
