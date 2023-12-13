@@ -34,31 +34,27 @@
 //-------------------------------------------------------------
 // Задача 3: Задайте массив из вещественных чисел с ненулевой дробной частью. 
 // Найдите разницу между максимальным и минимальным элементов массива.
-
-using System.ComponentModel.DataAnnotations;
-using System.Reflection.PortableExecutable;
-
-double[] array = {3.14, 2.78, 4.54, 70.35};
-// double N = 10;
-// double[] array = new double[N]; выдает ошибку, почему?
-double max = array[0];
-double min = array[0];
-double differece = 0;
-for(int i = 0; i < array.Length; i++)
- {
-      if (array[i] > max)
-      max = array[i];
-   }
-   for (int j = 0; j < array.Length; j++)
-   {
-    if (array[j] < min)
-     min = array[j];
-   }
-differece = max - min;
-  Console.WriteLine(max);
-Console.WriteLine(min);
-Console.WriteLine(differece);
-
+//double[] array = {3.14, 2.78, 4.54, 70.35};
+//               double N = 10;
+//               double[] array = new double[N]; выдает ошибку, почему?
+//double max = array[0];
+//double min = array[0];
+//double differece = 0;
+//for(int i = 0; i < array.Length; i++)
+//{
+//      if (array[i] > max)
+//      max = array[i];
+//   }
+//   for (int j = 0; j < array.Length; j++)
+//   {
+//    if (array[j] < min)
+//     min = array[j];
+//   }
+//differece = max - min;
+//  Console.WriteLine(max);
+//Console.WriteLine(min);
+//Console.WriteLine(differece);
+//---------------------------------------------------------
 
 
 
