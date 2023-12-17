@@ -55,28 +55,74 @@
 //Console.WriteLine(min);
 //Console.WriteLine(differece);
 //---------------------------------------------------------
+// 
+//            Задачи из семинара 2 Функции УРОК 4
+//Задача 2: Задайте массив заполненный случайными трёхзначными числами. 
+//Напишите программу, которая покажет количество чётных чисел в массиве.
+//  void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(100, 1000);
+// }
+
+// // функция возвращает True если число простое, иначе False
+// bool CheckProst(int x)
+// {
+//         if (x % 2 == 0)
+//             return true;
+//     return false;
+// }
 
 
+// void ReleaseArray(int[] array)
+// {
+//     int count = 0;
+//     for (int i = 0; i < array.Length; i++)
+//         if (CheckProst(array[i]))
+//             count ++;
+//     Console.WriteLine(count);
+// }
 
+// Console.Clear();
+// Console.Write("Введите число элементов: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine(string.Join(", ", array));
+// ReleaseArray(array);
+//--------------------------------------------------------------------
+//Задача 3: Напишите программу, которая перевернёт одномерный массив 
+//(первый элемент станет последним, второй – предпоследним и т.д.)
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(1, 100);
+// }
+ 
+//  void ReplacementArray(int[] array)
+// {
+//      int temp;
+//   for (int i = 0; i < array.Length / 2; i++) // цикл до середины массива
+//  {
+//     temp = array[i];
+//     array[i] = array[array.Length - 1 - i]; // обращение через последний эл.т массива
+//     array[array.Length - 1 - i] = temp;
+// }
+// }
 
+// void ReleaseArray(int[] array)
+// {
+// for (int i = 0; i < array.Length; i++)
+//    Console.Write($"{array[i]}, ");
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Console.Clear();
+// Console.Write("Введите число элементов: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine(string.Join(", ", array));
+// ReplacementArray(array);
+// ReleaseArray(array);
 
 
