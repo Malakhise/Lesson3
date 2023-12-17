@@ -98,7 +98,7 @@
 //     for (int i = 0; i < array.Length; i++)
 //         array[i] = new Random().Next(1, 100);
 // }
- 
+
 //  void ReplacementArray(int[] array)
 // {
 //      int temp;
@@ -124,5 +124,50 @@
 // Console.WriteLine(string.Join(", ", array));
 // ReplacementArray(array);
 // ReleaseArray(array);
+//-----------------------------------------------------------------
+// ## Задача 1: Напишите программу, которая бесконечно запрашивает 
+//целые числа с консоли. Программа завершается при вводе символа ‘q’ 
+//или при вводе числа, сумма цифр которого четная 
 
-
+// **Пример :**
+// * _5 12 16 q [STOP]_
+// * _3 45 342 15 [STOP]_
+// using System;
+// class Program
+// {
+//     static void Main()
+//     {
+//         while (true) // Бесконечный цикл
+//         {
+//             Console.Clear();
+//             Console.Write("Введите число или 'q' для выхода: ");
+//             string input = Console.ReadLine(); // Чтение строки ввода пользователя
+//             if (input == "q") // Проверка на ввод 'q' для выхода
+//             {
+//                 break;
+//             }
+//             int number;
+//             if (int.TryParse(input, out number)) // Проверка, является ли ввод числом
+//             {
+//                 int sum = 0;
+//                 while (number > 0) // Вычисление суммы цифр числа
+//                 {
+//                     sum += number % 10; // Добавление последней цифры к сумме
+//                     number /= 10; // Удаление последней цифры из числа
+//                 }
+//                 if (sum % 2 == 0) // Проверка, является ли сумма цифр четной
+//                 {
+//                     Console.WriteLine(sum);
+//                     break;
+//                 }
+//             }
+//             else // Если ввод не является числом и не 'q', повторить запрос
+//             {
+//                 Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число или 'q'.");
+//             }
+//         }
+//     }
+// }
+int n = 2;
+ n %= 10;
+Console.WriteLine(n);
